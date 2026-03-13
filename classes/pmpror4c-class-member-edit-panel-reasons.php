@@ -74,7 +74,7 @@ class PMPror4c_Member_Edit_Panel_Reasons extends PMPro_Member_Edit_Panel {
 										$level_names[] = $level->name;
 									}
 								}
-								esc_html_e( implode( ', ', $level_names ) );
+								echo esc_html( implode( ', ', $level_names ) );
 							} else {
 								echo '&mdash;';
 							}
