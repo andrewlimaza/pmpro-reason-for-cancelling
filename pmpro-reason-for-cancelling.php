@@ -147,3 +147,18 @@ function pmpror4c_load_textdomain() {
 	load_plugin_textdomain( 'pmpro-reason-for-cancelling', false, basename( dirname( __FILE__ ) ) . '/languages' );
 }
 add_action( 'plugins_loaded', 'pmpror4c_load_textdomain' );
+
+/**
+ * Function to add links to the plugin row meta
+ */
+function pmpror4c_plugin_row_meta( $links, $file ) {
+	if ( strpos( $file, 'pmpro-reason-for-cancelling.php' ) !== false ) {
+		$new_links = array(
+			'<a href="' . esc_url( 'https://www.paidmembershipspro.com/add-ons/pmpro-reason-cancelling/' ) . '" title="' . esc_attr( __( 'View Documentation', 'pmpro-reason-for-cancelling' ) ) . '">' . __( 'Docs', 'pmpro-reason-for-cancelling' ) . '</a>',
+			'<a href="' . esc_url( 'https://www.paidmembershipspro.com/support/' ) . '" title="' . esc_attr( __( 'Visit Customer Support Forum', 'pmpro-reason-for-cancelling' ) ) . '">' . __( 'Support', 'pmpro-reason-for-cancelling' ) . '</a>',
+		);
+		$links     = array_merge( $links, $new_links );
+	}
+	return $links;
+}
+add_filter( 'plugin_row_meta', 'pmpror4c_plugin_row_meta', 10, 2 );
