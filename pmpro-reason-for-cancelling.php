@@ -10,9 +10,6 @@
  * Domain Path: /languages
  */
 
- // Load functionality for PMPro v2.x.
- include_once( dirname( __FILE__ ) . '/includes/deprecated.php' );
-
 /**
  * Add a reason field to the cancel page.
  *
@@ -30,7 +27,7 @@ function pmpror4c_cancel_before_submit() {
 				<?php esc_html_e( 'Reason for Cancelling', 'pmpro-reason-for-cancelling' ); ?>
 				<span class="<?php echo esc_attr( pmpro_get_element_class( 'pmpro_asterisk' ) ); ?>"> <abbr title="<?php esc_attr_e( 'Required Field' ,'pmpro-reason-for-cancelling' ); ?>">*</abbr></span>
 			</label>
-			<textarea id="pmpro_cancel_reason" name="pmpro_cancel_reason" class="<?php echo esc_attr( pmpro_get_element_class( 'pmpro_form_input pmpro_form_input-textarea pmpro_form_field-required' ) ); ?>"></textarea>
+			<textarea id="pmpro_cancel_reason" name="pmpro_cancel_reason" class="<?php echo esc_attr( pmpro_get_element_class( 'pmpro_form_input pmpro_form_input-textarea pmpro_form_field-required' ) ); ?>" required></textarea>
 		</div> <!-- end pmpro_cancel_reason_div -->
 	</div> <!-- end pmpro_reason_for_cancelling -->
 	<?php
