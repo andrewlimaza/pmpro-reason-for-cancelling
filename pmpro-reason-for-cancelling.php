@@ -80,7 +80,7 @@ function pmpror4c_email_body( $body, $email ) {
 	if ( ! empty( $_REQUEST['pmpro_cancel_reason'] ) ) {
 		$reason = trim( wp_unslash( sanitize_text_field( $_REQUEST['pmpro_cancel_reason'] ) ) );
 	} else {
-		$reason = __( 'N/A', 'pmpro-reason-for-cancelling' );
+		$reason = __( 'System Cancelled', 'pmpro-reason-for-cancelling' );
 	}
 
 	// Replace in standard templates.
