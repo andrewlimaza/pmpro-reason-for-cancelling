@@ -1,17 +1,17 @@
-# Copyright (C) 2024 Paid Memberships Pro
+# Copyright (C) 2026 Paid Memberships Pro
 # This file is distributed under the same license as the Paid Memberships Pro - Reason For Cancelling Add On plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Paid Memberships Pro - Reason For Cancelling Add On 1.0\n"
+"Project-Id-Version: Paid Memberships Pro - Reason For Cancelling Add On 1.2\n"
 "Report-Msgid-Bugs-To: info@paidmembershipspro.com\n"
 "Last-Translator: Paid Memberships Pro <info@paidmembershipspro.com>\n"
 "Language-Team: Paid Memberships Pro <info@paidmembershipspro.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-02-21T14:21:36+00:00\n"
+"POT-Creation-Date: 2026-03-13T12:41:54+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.10.0\n"
+"X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: pmpro-reason-for-cancelling\n"
 
 #. Plugin Name of the plugin
@@ -63,69 +63,38 @@ msgstr ""
 msgid "All Levels"
 msgstr ""
 
-#: includes/deprecated.php:27
-#: pmpro-reason-for-cancelling.php:50
-msgid "Please enter a reason for cancelling."
+#: pmpro-reason-for-cancelling.php:22
+msgid "What made you cancel? Please share your reason below and click the button to confirm cancellation."
 msgstr ""
 
-#: includes/deprecated.php:45
-msgid "Reason for cancelling:"
+#: pmpro-reason-for-cancelling.php:27
+msgid "What made you cancel?"
 msgstr ""
 
-#: includes/deprecated.php:62
-#: pmpro-reason-for-cancelling.php:74
-msgid "N/A"
+#: pmpro-reason-for-cancelling.php:28
+msgid "Required Field"
 msgstr ""
 
-#: pmpro-reason-for-cancelling.php:25
-#: templates/cancel.php:57
-msgid "If so, please enter a reason for cancelling and click \"Yes, cancel my account\" below."
+#: pmpro-reason-for-cancelling.php:59
+msgid "Please tell us what made you cancel."
 msgstr ""
 
-#: pmpro-reason-for-cancelling.php:26
-#: templates/cancel.php:58
-msgid "Reason for Cancelling"
+#: pmpro-reason-for-cancelling.php:83
+msgid "System Cancelled"
 msgstr ""
 
-#: templates/cancel.php:42
-msgid "Are you sure you want to cancel your membership?"
+#: pmpro-reason-for-cancelling.php:158
+msgid "View Documentation"
 msgstr ""
 
-#. translators: %s: The level name(s).
-#: templates/cancel.php:50
-msgid "Are you sure you want to cancel your %s membership?"
-msgid_plural "Are you sure you want to cancel your %s memberships?"
-msgstr[0] ""
-msgstr[1] ""
-
-#: templates/cancel.php:65
-msgid "Yes, cancel my account"
+#: pmpro-reason-for-cancelling.php:158
+msgid "Docs"
 msgstr ""
 
-#: templates/cancel.php:67
-msgid "No, keep my account"
+#: pmpro-reason-for-cancelling.php:159
+msgid "Visit Customer Support Forum"
 msgstr ""
 
-#: templates/cancel.php:74
-msgid "My Memberships"
-msgstr ""
-
-#: templates/cancel.php:78
-msgid "Level"
-msgstr ""
-
-#: templates/cancel.php:79
-msgid "Expiration"
-msgstr ""
-
-#: templates/cancel.php:104
-msgid "Cancel"
-msgstr ""
-
-#: templates/cancel.php:113
-msgid "Cancel All Memberships"
-msgstr ""
-
-#: templates/cancel.php:122
-msgid "Click here to go to the home page."
+#: pmpro-reason-for-cancelling.php:159
+msgid "Support"
 msgstr ""
