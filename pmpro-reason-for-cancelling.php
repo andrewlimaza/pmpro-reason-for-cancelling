@@ -28,7 +28,7 @@ function pmpror4c_cancel_before_submit() {
 		<div id="pmpro_cancel_reason_div" class="<?php echo esc_attr( pmpro_get_element_class( 'pmpro_form_field pmpro_form_field-textarea pmpro_form_field-required' ) ); ?>">
 			<label class="<?php echo esc_attr( pmpro_get_element_class( 'pmpro_form_label' ) ); ?>" for="pmpro_cancel_reason">
 				<?php esc_html_e( 'What made you cancel?', 'pmpro-reason-for-cancelling' ); ?>
-				<span class="<?php echo esc_attr( pmpro_get_element_class( 'pmpro_asterisk' ) ); ?>"> <abbr title="<?php esc_attr_e( 'Required Field' ,'pmpro-reason-for-cancelling' ); ?>">*</abbr></span>
+				<span class="<?php echo esc_attr( pmpro_get_element_class( 'pmpro_asterisk' ) ); ?>"> <abbr title="<?php esc_attr_e( 'Required Field', 'pmpro-reason-for-cancelling' ); ?>">*</abbr></span>
 			</label>
 			<textarea id="pmpro_cancel_reason" name="pmpro_cancel_reason" class="<?php echo esc_attr( pmpro_get_element_class( 'pmpro_form_input pmpro_form_input-textarea pmpro_form_field-required' ) ); ?>"></textarea>
 		</div> <!-- end pmpro_cancel_reason_div -->
