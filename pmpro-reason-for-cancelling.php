@@ -54,7 +54,11 @@ function pmpror4c_cancel_should_process( $process_cancellation ) {
 	}
 
 	// Make sure a reason is provided.
-	if ( empty( trim( $_REQUEST['pmpro_cancel_reason'] ) ) ) {
+	$reason = '';
+	if ( isset( $_REQUEST['pmpro_cancel_reason'] ) ) {
+		$reason = trim( wp_unslash( sanitize_text_field( $_REQUEST['pmpro_cancel_reason'] ) ) );
+	}
+	if ( empty( $reason ) ) {
 		pmpro_setMessage( __( 'Please tell us what made you cancel.', 'pmpro-reason-for-cancelling' ), 'pmpro_error' );
 		return false;
 	}
